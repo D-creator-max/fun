@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Still Small Voice Adventure</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f7;
+            overflow-x: hidden;
+        }
+
+        .content {
+            padding: 20px;
+            min-height: 80vh;
+        }
+
+        /* Game Section */
+        #gameSection {
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+            text-align: center;
+            border-top: 2px solid #ddd;
+        }
+
+        #gameCanvas {
+            display: none;
+            margin: 20px auto;
+            background: linear-gradient(to bottom, #87CEEB, #f3f4f7);
+            border: 2px solid #ddd;
+            border-radius: 10px;
+        }
+
+        #startButton {
+            padding: 15px 30px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #startButton:hover {
+            background-color: #45a049;
+        }
+
+        #instructions {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Main website content -->
+    <div class="content">
+    <!-- Game section -->
+    <div id="gameSection">
+        <h2>Still Small Voice Adventure</h2>
+        <p id="instructions">Navigate through the chaos and distractions to reach the still small voice! Use arrow keys or touch to move.</p>
+        <button id="startButton">Start Adventure</button>
+        <canvas id="gameCanvas" width="800" height="400"></canvas>
+    </div>
+
+    <script src="adventure.js"></script>
+</body>
+</html>
